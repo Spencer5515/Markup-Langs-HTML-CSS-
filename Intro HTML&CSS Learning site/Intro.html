@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- metadata (title, site info, style, etc) -->
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css"> <!-- imports css stylesheet -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!-- imported font -->
+
+        <h2 class="red-text">CatPhotoApp</h2>
+        <hr> <!-- page break line -->
+
+        <!-- '<strong>' == bold -->
+        <!-- '<u>' == underline -->
+        <!-- '<em>' == italicized -->
+        <!-- '<s>' == strike through -->
+        <!-- '<nav>' == navbar element -->
+    </head>
+
+    <body> <!-- code body (UX) -->
+        <header>
+            <p class="red-text"><strong>Click here to view more <a tabindex="0" accesskey="c" href="#">cat photos</a></strong></p> <!-- inserts hyperlink into doc -->
+            <!-- accesskey attribute gives hotkey controls to page elements -->
+            <!-- link can be used for external sites or internal page locations -->
+        </header>
+
+        <main> <!-- main block -->
+            <br>
+            <a id="cat-image" href="#OrangeCat"><img class="thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" 
+                alt="A cute orange cat lying on its back."></a> <!-- inserts image -->
+            <a id="cat-image" href="#TwoCats"><img class="thick-blue-border" src="https://lirp-cdn.multiscreensite.com/ef1d3b1d/import/clib/planetpet_net_au/dms3rep/multi/opt/PlanetPetImages1cat_srcset-large-281x281-320w.jpg" 
+                alt="Two cats curled in a ball together."></a> <!-- inserts image -->
+            <a id="cat-image" href="#BlackCat"><img class="thick-blue-border" src="https://lirp-cdn.multiscreensite.com/ef1d3b1d/import/clib/planetpet_net_au/dms3rep/multi/opt/PlanetPetImages3cat_srcset-large-281x280-320w.jpg" 
+                alt="Black cat laying on red blanket."></a> <!-- inserts image -->
+            <!-- uses href to turn image into hyperlink -->
+
+            <p><em>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, 
+                hairball run catnip eat the grass sniff.</em></p>
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink 
+                fluffy fur catnip scratched.</p>
+            <hr> <!-- page break line -->
+    
+            <div class="blue-background"> <!-- division element -->
+                <legend><strong><u>Things cats love :</u></strong></legend> <!-- Unordered List -->
+                <ul>
+                    <li>Milk</li>
+                    <li>Being Annoying</li>
+                    <li>Puking</li>
+                </ul>
+    
+                <legend><strong><u>Top 3 things cats hate :</u></strong></legend> <!-- Ordered List-->
+                <ol>
+                    <li>Being Annoyed</li>
+                    <li>Ducks</li>
+                    <li>Snakes</li>
+                </ol>
+            </div>
+            <hr> <!-- page break line -->
+    
+            <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- form & action element(s) -->
+                <!-- Radio group for indoor vs outdoor buttons -->
+                <label for="indoor"> <input id="indoor" value="inddor" type="radio" name="indoor-outdoor"> Indoor </label>
+                <label for="outdoor"> <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor </label>
+                <br><br> <!-- newline -->
+    
+                <!-- Radio group for personality checkboxes -->
+                <label for="Loving"> <input id="Loving" value="Loving" type="checkbox" name="personality"> Loving </label>
+                <label for="Lazy"> <input id="Lazy" value="Lazy" type="checkbox" name="personality"> Lazy </label>
+                <label for="Energetic"> <input id="Energetic" value="Energetic" type="checkbox" name="personality"> Energetic </label>
+                <br><br> <!-- newline -->
+    
+                <label for="pickdate">Prefered Date: </label>
+                <input type="date" id="pickdate" name="date"><br><br> <!-- Allows user to input a date -->
+
+                <input type="text" required placeholder="cat photo URL"> <!-- Placeholder text -->
+                <!-- 'required' keyword requires user input for submission -->
+                <button type="submit">Submit</button> <!-- Submit button -->
+            </form>
+        </main> <!-- main block -->
+
+        <br><br>
+        <footer>&copy; 2020 Spencer DeMera</footer><br>
+    </body>
+</html>

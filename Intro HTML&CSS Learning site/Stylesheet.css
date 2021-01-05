@@ -1,0 +1,78 @@
+/* separate stylesheet for css code */
+
+/* rgb(red, green, blue) */
+/* rgba(red, green, blue, transparency) */   
+/* background: url(<image url>); == background image */
+/* transform: scale(2); == scales element 2x */
+
+h2 { /* calling attribute type */
+    font-size: 45px;
+    font-family: Lobster, monospace;
+    background-color: rgba(240, 128, 128, 0.685);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 50px;
+}    
+
+body {
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(35deg, #b0dfff, #fcc1c1);
+}
+
+.red-text { /* class declaration */
+    color: crimson; 
+} 
+
+p {
+    color: black;
+    font-size: 16px;
+    font-family: arial;
+    line-height: 20px;
+} 
+
+/* highlights background color of first tabindex */
+/* a:focus { background-color: #fcc1c1; } */ 
+
+.thick-blue-border {
+    width: 100px;
+    border-color: rgba(0, 183, 255, 0.555);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}          
+
+img:hover {
+    transform: scale(1.1); /* scales image 1.1 times when hover over */
+    padding: 5px;
+    border-color: rgba(0, 183, 255, 0.856);
+}
+
+.blue-background {
+    background-color: rgba(0, 183, 255, 0.555);
+    color: black;
+    width: 40%;
+    padding: 15px;
+    border-radius: 30px;
+}         
+
+[type='checkbox'] { /* specific to group of attributes */
+    margin: 10px 0px 15px 0px;
+}
+
+footer {
+    background-color: rgba(240, 128, 128, 0.685);
+    color: crimson;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 50px;
+}
+
+@media (max-height: 1080px) { /* if device height <= 1080px -> p:font-size == 16px */
+    p {
+        font-size: 16px;
+    }
+}
