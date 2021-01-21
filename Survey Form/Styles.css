@@ -1,0 +1,124 @@
+/* IDs */
+#main {
+    background: linear-gradient(35deg, #3b7ca7, #8063af);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #3f3f3f;
+}
+
+#description {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #3f3f3f;
+}
+
+/* form ID */
+#survey-form {
+    background-color: #271d5cb7;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    color: white;
+    padding: 2em;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(0, 184, 83);
+    border-color: rgb(0, 184, 83);
+    color: inherit;
+    font-size: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Classes */
+/* controls for all input areas */
+.controls {
+    font-family:serif;
+    display: block;
+    width: 90%;
+    height: 2rem;
+    padding: 0.3rem 0.5rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.4rem;
+}
+
+.text-controls {
+    font-family:serif;
+    display: block;
+    width: 90%;
+    height: 6rem;
+    padding: 0.3rem 0.5rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.4rem;
+}
+
+/* Attributes */
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+footer {
+    background-color: #271d5cb7;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+/* Text padding for tribute-info */
+@media screen and (max-width: 1920px) {
+    #survey-form {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #survey-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #survey-form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #survey-form {
+        width: 70%;
+        min-width: 70%;
+    }
+}
